@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    /* Brand Primary Red #E31C1C */
+    --primary: 0 79% 49%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Brand Secondary Green #557843 */
+    --secondary: 99 29% 36%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 97%;
+    --muted-foreground: 0 0% 42%;
+
+    --accent: 0 0% 97%;
+    --accent-foreground: 0 0% 13%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 93%;
+    --input: 0 0% 93%;
+    --ring: 0 79% 49%;
+
+    --radius: 1rem;
+
+    --olive: 99 29% 36%;
+    --olive-light: 99 29% 92%;
+    --olive-dark: 99 29% 22%;
+
+    /* Used for section alt backgrounds #F8F8F8 */
+    --cream: 0 0% 97%;
+
+    --gold: 0 79% 60%;
+
+    --font-display: 'Montserrat', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 0 79% 49%;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+  }
+
+  .bg-hero-pattern {
+    background-image:
+      radial-gradient(ellipse at 20% 50%, hsl(var(--secondary)/0.1) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, hsl(var(--primary)/0.05) 0%, transparent 50%);
+  }
+
+  .bg-section-alt {
+    background-color: hsl(var(--cream));
+  }
+
+  .bg-leaves-pattern {
+    background-color: #ffffff;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/src/assets/leaves-bg.png');
+    background-repeat: repeat;
+    background-size: 420px auto;
+    background-position: center;
+  }
+}
