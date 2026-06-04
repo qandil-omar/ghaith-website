@@ -6,53 +6,55 @@ import { motion } from "framer-motion";
 import factoryImg from "@/assets/alghaith-factory.jpg";
 import productsImg from "@/assets/alghaith-products.jpg";
 import farmImg from "@/assets/egyptian-farm.jpg";
-
-const tabs = [
-  { id: "factory", label: "Our Factory" },
-  { id: "products", label: "Our Products" },
-  { id: "farms", label: "Our Farms" },
-  { id: "certs", label: "Certifications" },
-  { id: "export", label: "Export & Logistics" },
-];
-
-const galleryItems: Record<string, { img: string; caption: string }[]> = {
-  factory: [
-    { img: factoryImg, caption: "Modern processing lines and IQF freezing tunnels" },
-    { img: factoryImg, caption: "Canning operations and cold storage halls" },
-    { img: factoryImg, caption: "Quality control laboratory" },
-  ],
-  products: [
-    { img: productsImg, caption: "Premium canned food product range" },
-    { img: productsImg, caption: "Retail and bulk packaging" },
-    { img: productsImg, caption: "Private label samples" },
-  ],
-  farms: [
-    { img: farmImg, caption: "Partner farms in Al Gharbia Governorate" },
-    { img: farmImg, caption: "Harvest activities across the Nile Delta" },
-    { img: farmImg, caption: "Fresh produce sorting and grading" },
-  ],
-  certs: [
-    { img: factoryImg, caption: "FDA and ISO certifications" },
-    { img: factoryImg, caption: "In-house lab testing" },
-    { img: factoryImg, caption: "Quality control team at work" },
-  ],
-  export: [
-    { img: factoryImg, caption: "Finished goods palletized for shipment" },
-    { img: factoryImg, caption: "Container loading operations" },
-    { img: factoryImg, caption: "Cold-chain refrigerated transport" },
-  ],
-};
+import { useTranslation } from "react-i18next";
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState("factory");
+  const { t } = useTranslation();
+
+  const tabs = [
+    { id: "factory", label: t('gallery_page.tabs.factory') },
+    { id: "products", label: t('gallery_page.tabs.products') },
+    { id: "farms", label: t('gallery_page.tabs.farms') },
+    { id: "certs", label: t('gallery_page.tabs.certs') },
+    { id: "export", label: t('gallery_page.tabs.export') },
+  ];
+
+  const galleryItems: Record<string, { img: string; caption: string }[]> = {
+    factory: [
+      { img: factoryImg, caption: t('gallery_page.captions.fac1') },
+      { img: factoryImg, caption: t('gallery_page.captions.fac2') },
+      { img: factoryImg, caption: t('gallery_page.captions.fac3') },
+    ],
+    products: [
+      { img: productsImg, caption: t('gallery_page.captions.prod1') },
+      { img: productsImg, caption: t('gallery_page.captions.prod2') },
+      { img: productsImg, caption: t('gallery_page.captions.prod3') },
+    ],
+    farms: [
+      { img: farmImg, caption: t('gallery_page.captions.farm1') },
+      { img: farmImg, caption: t('gallery_page.captions.farm2') },
+      { img: farmImg, caption: t('gallery_page.captions.farm3') },
+    ],
+    certs: [
+      { img: factoryImg, caption: t('gallery_page.captions.cert1') },
+      { img: factoryImg, caption: t('gallery_page.captions.cert2') },
+      { img: factoryImg, caption: t('gallery_page.captions.cert3') },
+    ],
+    export: [
+      { img: factoryImg, caption: t('gallery_page.captions.exp1') },
+      { img: factoryImg, caption: t('gallery_page.captions.exp2') },
+      { img: factoryImg, caption: t('gallery_page.captions.exp3') },
+    ],
+  };
 
   return (
     <div className="min-h-screen">
       <Navbar />
       <div>
         <PageHero
-          title="Gallery"
-          subtitle="A Glimpse Inside ALGHAITH — Where Quality Begins"
+          title={t('gallery_page.hero_title')}
+          subtitle={t('gallery_page.hero_subtitle')}
         />
 
         <section className="py-12 bg-background">
@@ -89,7 +91,7 @@ const Gallery = () => {
             </motion.div>
 
             <p className="text-center text-sm text-muted-foreground mt-12">
-              Interested in visiting our facility? We welcome partner factory visits by appointment.
+              {t('gallery_page.visit_note')}
             </p>
           </div>
         </section>

@@ -1,0 +1,728 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "why_us": "Why Us",
+    "private_label": "Private Label",
+    "services": "Services",
+    "certifications": "Certifications",
+    "gallery": "Gallery",
+    "contact": "Contact Us",
+    "get_quote": "Get Quote",
+    "lang_switcher": "AR"
+  },
+  "hero": {
+    "title1": "Quality You Can Trust",
+    "title2": "Freshness You Can Taste",
+    "description": "From the fertile heart of Egypt's Nile Delta to tables across the globe — ALGHAITH Factory delivers premium processed, frozen, and canned fruits and vegetables, crafted with precision and preserved with purpose.",
+    "explore_btn": "Explore Our Products",
+    "quote_btn": "Request a Quote",
+    "stats": {
+      "est": "Est. 2014",
+      "est_label": "A decade of food processing excellence",
+      "certs": "5+",
+      "certs_label": "International Certifications",
+      "categories": "8",
+      "categories_label": "Product Categories",
+      "global": "Global",
+      "global_label": "Gulf · Europe · North America"
+    }
+  },
+  "about_section": {
+    "subtitle": "About Us",
+    "title": "Egypt's Agricultural Heritage — In Every Can and Every Pack",
+    "description": "Since 2014, ALGHAITH Factory has been turning Egypt's finest harvests into world-class products that reach homes, restaurants, and supermarkets across continents. Located in Alatwa Alqeblia, Qutour — the heartland of Al Gharbia's rich agricultural belt — we combine decades of local farming knowledge with advanced IQF and canning technology.",
+    "btn": "Discover Our Story →"
+  },
+  "product_categories": {
+    "subtitle": "Our Products",
+    "title": "Eight Categories, One Standard of Excellence",
+    "description": "Explore our comprehensive range of premium Egyptian agricultural products, processed and preserved to perfection for the global market.",
+    "view_range": "View Range",
+    "explore_catalog": "Explore Complete Catalog",
+    "products_word": "Products",
+    "cats": {
+      "frozen-vegetables": "Frozen Vegetables",
+      "fruits": "Fruits",
+      "olives": "Olives",
+      "peppers": "Peppers",
+      "pickles": "Pickles",
+      "canned-vegetables": "Canned Vegetables",
+      "beans-legumes": "Beans & Legumes"
+    }
+  },
+  "why_choose_section": {
+    "subtitle": "Why Choose Us",
+    "title": "Why Choose ALGHAITH",
+    "quality_title": "Our Quality Is Verified",
+    "quality_desc": "Every product leaving ALGHAITH Factory carries the weight of trust — earned through rigorous third-party audits and internationally recognized certifications.",
+    "reasons": {
+      "r1_title": "State-of-the-Art Facility",
+      "r1_desc": "Modern manufacturing with latest canning technology ensuring top-tier quality and food safety.",
+      "r2_title": "Farm to Can",
+      "r2_desc": "Sourcing the finest raw materials directly from Egyptian farms for freshness and traceability.",
+      "r3_title": "Global Export Network",
+      "r3_desc": "Exporting to markets across Europe, the Middle East, Africa, Asia, and the Americas.",
+      "r4_title": "Internationally Certified",
+      "r4_desc": "FDA · ISO 9001 · ISO 22000 · Kosher · HALAL certifications.",
+      "r5_title": "High Production Capacity",
+      "r5_desc": "Significant annual production capacity for large-scale orders with consistency.",
+      "r6_title": "Customer-Centric",
+      "r6_desc": "Close collaboration for customized solutions that exceed expectations."
+    },
+    "certifications": {
+      "c1_desc": "US Food & Drug Administration",
+      "c2_desc": "Quality Management System",
+      "c3_desc": "Food Safety Management",
+      "c4_desc": "Certified WK Israel",
+      "c5_desc": "Islamic Food & Nutrition"
+    }
+  },
+  "private_label_section": {
+    "badge": "Private Label",
+    "title1": "Expert Private Label",
+    "title2": "Producers",
+    "subtitle": "Your brand, our expertise.",
+    "desc1": "We produce tailor-made private label products for our international clients and partners all over the world. From sourcing premium ingredients from Egypt's richest agricultural belts to state-of-the-art manufacturing, we prioritize quality at every step.",
+    "desc2": "As a trusted partner for private label manufacturing, we understand the unique requirements and aspirations of our clients. Our dedicated team of professionals works closely with each client to develop and deliver customized private label solutions that align with their brand vision and market positioning.",
+    "quote": "Choose ALGHAITH as your trusted partner, and let us bring your private label vision to life on a global scale.",
+    "capabilities_title": "Our Capabilities",
+    "capabilities": [
+      "Full product range available — all 8 categories",
+      "Cans, Glass Jars, and Frozen bulk & retail formats",
+      "Multi-language labeling & packaging design",
+      "Compliant with EU, GCC, UK, and US regulations",
+      "Nutritional analysis & allergen declarations included",
+      "Recipe and flavor customization available"
+    ],
+    "f1_title": "State-of-the-Art Manufacturing",
+    "f1_desc": "Latest technology and automated production lines",
+    "f2_title": "Premium Ingredients",
+    "f2_desc": "Sourced directly from our trusted Egyptian farms",
+    "f3_title": "Dedicated Partnership",
+    "f3_desc": "Close collaboration for customized solutions",
+    "f4_title": "Global Scale",
+    "f4_desc": "International reach to Europe, Gulf and Americas",
+    "img_title": "Private Label Manufacturing",
+    "img_subtitle": "Customized solutions for your brand"
+  },
+  "cta_section": {
+    "title": "Ready to Partner with Egypt's Leading Food Processor?",
+    "desc": "From your first enquiry to your first shipment, the ALGHAITH team is with you at every step.",
+    "contact": "Contact Us",
+    "download": "Download Catalogue"
+  },
+  "footer": {
+    "desc": "Processing and Preserving Fruits & Vegetables since 2014. Egypt's finest harvests, world-class quality.",
+    "products_title": "Products",
+    "company_title": "Company",
+    "contact_title": "Contact",
+    "address": "Alatwa Alqeblia, Qutour",
+    "address2": "Al Gharbia, Egypt",
+    "copyright": "© {{year}} ALGHAITH Factory for Processing and Preserving Fruits & Vegetables.",
+    "rights": "All rights reserved.",
+    "tagline": "Quality you can trust — Freshness you can taste."
+  },
+  "not_found": {
+    "title": "404",
+    "desc": "Oops! Page not found",
+    "return": "Return to Home"
+  },
+  "about_page": {
+    "hero_title": "More Than a Factory",
+    "hero_subtitle": "We Are Egypt's Agricultural Legacy",
+    "story_title": "Our Story",
+    "story_p1": "ALGHAITH Factory was born from a deep belief in two things: the unmatched richness of Egyptian soil, and the world's need for honest, high-quality food. Founded in 2014 in Alatwa Alqeblia, Qutour, Al Gharbia — a governorate historically known as the backbone of Egypt's agricultural output — our factory was built from the ground up with a single purpose: to process and preserve Egypt's finest fruits and vegetables while maintaining every gram of their natural value, flavor, and nutrition.",
+    "story_p2": "Over the years, we have grown from a regional processor into a globally recognized exporter, earning certifications from the world's most demanding food safety authorities: the U.S. FDA, ISO 9001:2015, ISO 22000:2018, Kosher (World of Kashrut), and HALAL (IFNAS).",
+    "story_p3": "Today, ALGHAITH serves leading retailers, food manufacturers, and private-label brands in the Gulf, Europe, and the Americas. Our eight product categories span frozen vegetables and fruits, canned legumes, olives, stuffed vegetables, artichokes, pickles, and roasted peppers.",
+    "farm_to_fork_title": "Farm to Fork —",
+    "farm_to_fork_highlight": "Complete Control",
+    "farm_to_fork_suffix": "at Every Stage",
+    "steps": {
+      "s1_title": "Farm Selection",
+      "s1_desc": "We partner exclusively with vetted farms in Al Gharbia's fertile belt, where soil quality, water purity, and farming practices meet our strict standards.",
+      "s2_title": "Harvest at Peak",
+      "s2_desc": "Produce is harvested at the precise moment of peak ripeness — not before, not after. This single decision is where quality is either won or lost.",
+      "s3_title": "Factory Processing",
+      "s3_desc": "Within hours of harvest, produce enters our processing lines: washed, graded, blanched, and either IQF-frozen or sealed in airtight cans and jars.",
+      "s4_title": "Quality Assurance & Export",
+      "s4_desc": "Every batch passes in-house microbiological and chemical testing before being released. Certified documentation accompanies every shipment."
+    },
+    "vision_title": "Our Vision",
+    "vision_desc": "To be the most trusted name in Egyptian food processing — a bridge between the world's finest farmland and the global consumer's table. We envision a world where every household, regardless of geography, has access to the natural goodness of fresh Egyptian produce.",
+    "mission_title": "Our Mission",
+    "mission_desc": "To produce, package, and export the finest frozen and canned fruits and vegetables from Egypt's most fertile farms — meeting the highest international standards of quality, safety, and taste.",
+    "values_title": "Our Values",
+    "values": {
+      "v1_title": "Quality Without Compromise",
+      "v1_desc": "We never ship a product we would not proudly serve at our own table.",
+      "v2_title": "Transparency & Trust",
+      "v2_desc": "Our clients know exactly what they are getting — the same quality, every single time.",
+      "v3_title": "Innovation",
+      "v3_desc": "We invest continuously in new processing technologies and product development.",
+      "v4_title": "Sustainability",
+      "v4_desc": "Committed to responsible agricultural practices that protect Egypt's natural resources.",
+      "v5_title": "Customer Partnership",
+      "v5_desc": "Our clients are not just buyers — they are partners. We accept custom orders and private label requests."
+    },
+    "factory_title": "Our Factory",
+    "factory_desc": "Located in the heart of Al Gharbia Governorate — one of Egypt's richest agricultural regions — our factory is equipped with modern processing, freezing, and canning lines designed for efficiency, hygiene, and precision.",
+    "factory_features": [
+      "IQF Tunnel Freezing Lines",
+      "Advanced Blanching & Washing Systems",
+      "Automated Canning & Sealing Lines",
+      "Glass Jar Filling Line",
+      "Cold Storage Facilities",
+      "In-House Quality Control Laboratory",
+      "Private Label Packaging Line"
+    ]
+  },
+  "contact_page": {
+    "hero_title": "Contact Us",
+    "hero_subtitle": "Let's Build Something Great Together",
+    "info_title": "Contact Information",
+    "address_l1": "ALGHAITH Factory",
+    "address_l2": "Alatwa Alqeblia, Qutour",
+    "address_l3": "Al Gharbia Governorate, Egypt",
+    "website_label": "Website:",
+    "reply_note": "We reply to every serious enquiry within 24 business hours.",
+    "form_title": "Send Us an Enquiry",
+    "f_name": "Full Name *",
+    "f_name_ph": "Your name",
+    "f_company": "Company Name *",
+    "f_company_ph": "Company",
+    "f_email": "Email Address *",
+    "f_email_ph": "your@email.com",
+    "f_phone": "Phone / WhatsApp",
+    "f_phone_ph": "+20...",
+    "f_country": "Country *",
+    "f_country_ph": "Country",
+    "f_category": "Category of Interest *",
+    "f_category_ph": "Select a category",
+    "f_volume": "Estimated Monthly Volume",
+    "f_volume_ph": "Select volume",
+    "f_message": "Message *",
+    "f_message_ph": "Tell us about your requirements...",
+    "f_submit": "Send Enquiry",
+    "faq_title": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "q": "What is your minimum order quantity?",
+        "a": "For frozen products, minimum of 1 pallet (approx 500–1,000 kg). For canned goods, minimums start at 1 full pallet per SKU."
+      },
+      {
+        "q": "Do you offer private label services?",
+        "a": "Yes. Full private label manufacturing across all eight product categories — in cans, glass jars, and frozen bulk/retail formats."
+      },
+      {
+        "q": "What certifications do your products hold?",
+        "a": "U.S. FDA (Reg. No. 19951687376), ISO 9001:2015, ISO 22000:2018, Kosher (World of Kashrut), and HALAL (IFNAS)."
+      },
+      {
+        "q": "Which markets do you currently export to?",
+        "a": "Gulf Cooperation Council countries, Europe, and the United States. We welcome enquiries from all regions."
+      },
+      {
+        "q": "Can I visit your factory?",
+        "a": "Absolutely. We welcome factory visits from serious partners. Contact us in advance to schedule."
+      },
+      {
+        "q": "What packaging options are available?",
+        "a": "400g retail cans, A9 catering (2.65kg), A10 bulk (3kg), glass jars (180ml–2L), frozen retail bags (400g–1kg) and bulk cartons (5–10kg)."
+      },
+      {
+        "q": "How long for a price quotation?",
+        "a": "We respond to all pricing enquiries within 24 business hours. For private label, 3–5 business days for full proposal."
+      }
+    ]
+  },
+  "gallery_page": {
+    "hero_title": "Gallery",
+    "hero_subtitle": "A Glimpse Inside ALGHAITH — Where Quality Begins",
+    "tabs": {
+      "factory": "Our Factory",
+      "products": "Our Products",
+      "farms": "Our Farms",
+      "certs": "Certifications",
+      "export": "Export & Logistics"
+    },
+    "captions": {
+      "fac1": "Modern processing lines and IQF freezing tunnels",
+      "fac2": "Canning operations and cold storage halls",
+      "fac3": "Quality control laboratory",
+      "prod1": "Premium canned food product range",
+      "prod2": "Retail and bulk packaging",
+      "prod3": "Private label samples",
+      "farm1": "Partner farms in Al Gharbia Governorate",
+      "farm2": "Harvest activities across the Nile Delta",
+      "farm3": "Fresh produce sorting and grading",
+      "cert1": "FDA and ISO certifications",
+      "cert2": "In-house lab testing",
+      "cert3": "Quality control team at work",
+      "exp1": "Finished goods palletized for shipment",
+      "exp2": "Container loading operations",
+      "exp3": "Cold-chain refrigerated transport"
+    },
+    "visit_note": "Interested in visiting our facility? We welcome partner factory visits by appointment."
+  },
+  "certifications_page": {
+    "hero_title": "Certifications",
+    "hero_subtitle": "Our Quality Is Not Self-Declared — It Is Verified, Audited, and Certified",
+    "description": "Every product leaving ALGHAITH Factory carries the weight of trust — earned through rigorous third-party audits, continuous internal quality management, and an unwavering commitment to food safety.",
+    "certs": [
+      {
+        "name": "U.S. FDA",
+        "full": "U.S. Food and Drug Administration",
+        "desc": "Facility Registration No. 19951687376. Agent: QA Technic International. FDA registration is required for any food facility exporting to the United States — the strictest food safety regulatory framework in the world."
+      },
+      {
+        "name": "ISO 9001:2015",
+        "full": "Quality Management System",
+        "desc": "Certificate No.: EG02390246. Certified by SINFINITY for Processing, Freezing, Packing, Preservation and Exporting of Vegetables and Fruits. The global benchmark for quality management."
+      },
+      {
+        "name": "ISO 22000:2018",
+        "full": "Food Safety Management System",
+        "desc": "Certificate No.: EG02390248. Certified by SINFINITY. Integrates HACCP principles with quality management practices. Hazard analysis and critical control points embedded at every production stage."
+      },
+      {
+        "name": "Kosher",
+        "full": "World of Kashrut (WK)",
+        "desc": "Products certified Kosher Parve. Certifying Body: World of Kashrut (WK) — Israel. Opens product range to Jewish consumers globally, increasingly required by US and European retailers."
+      },
+      {
+        "name": "HALAL",
+        "full": "IFNAS Certification",
+        "desc": "Certificate Number: IFNAS-EG-HALAL-AF-907. Certifying Body: Islamic Food & Nutrition Awareness Society. A prerequisite for market entry in GCC countries, Indonesia, Malaysia."
+      }
+    ],
+    "download_note": "All certificates are available to download or can be provided in full upon request."
+  },
+  "services_page": {
+    "hero_title": "Our Services",
+    "hero_subtitle": "End-to-End Solutions — From Raw Ingredient to Your Market Shelf",
+    "description": "ALGHAITH offers more than products. We offer a complete service ecosystem designed to make your sourcing experience seamless — from the first enquiry to the final delivery.",
+    "services": [
+      {
+        "title": "Food Processing & Manufacturing",
+        "desc": "Processing, freezing, canning, and preservation of premium Egyptian fruits and vegetables across eight product categories. Every production run is executed under ISO 9001 and ISO 22000 certified systems, with full batch traceability."
+      },
+      {
+        "title": "Private Label & OEM Manufacturing",
+        "desc": "Full private label service for all product categories. Minimum order quantities are discussed per product and format. We have successfully launched private label brands for clients in the GCC, Europe, and North America."
+      },
+      {
+        "title": "Custom Product Development",
+        "desc": "New flavor profiles, vegetable and fruit combinations, organic product lines, convenience formats (microwaveable pouches, portion-controlled servings), and reduced-sodium or clean-label formulations."
+      },
+      {
+        "title": "Export & Logistics Support",
+        "desc": "Complete export documentation and logistics coordination: Certificate of Origin, Health and Food Safety Certificates, Phytosanitary Certificates, customs clearance, cold-chain logistics. Flexible Incoterms: FOB · CIF · CFR."
+      },
+      {
+        "title": "Quality Assurance & Compliance",
+        "desc": "Third-party pre-shipment inspection support, in-house lab testing certificates, shelf-life and nutritional analysis documentation, batch-level traceability reports, allergen declarations and labeling compliance review."
+      }
+    ]
+  },
+  "private_label_page": {
+    "hero_title": "Private Label",
+    "hero_subtitle": "Your Brand — Our Expertise — Our Quality",
+    "description": "Build your brand on Egypt's finest produce. ALGHAITH manufactures and packages the full range of our eight product categories under your own brand name — with everything handled in-house, from product development to export documentation.",
+    "how_it_works_title": "How It Works",
+    "steps": [
+      {
+        "title": "Tell Us Your Vision",
+        "desc": "Share your target market, product requirements, preferred packaging format, and label language. Our team reviews within 48 hours."
+      },
+      {
+        "title": "Product & Packaging Development",
+        "desc": "We develop your product specifications, propose packaging options, and prepare label design mockups for your approval."
+      },
+      {
+        "title": "Sample Production",
+        "desc": "We produce a sample batch for your quality review and taste approval before committing to full production."
+      },
+      {
+        "title": "Production & Export",
+        "desc": "Your order enters our production queue. We handle all export documentation, certifications, and logistics coordination."
+      }
+    ],
+    "offerings_title": "What We Offer",
+    "offerings": [
+      "Full product range available — all 8 categories",
+      "Cans: 400g retail · A9 catering · A10 bulk industrial",
+      "Glass jars: 180ml · 370ml · 720ml · 1L · 2L",
+      "Frozen: 400g · 800g · 1kg retail · 5kg · 10kg bulk",
+      "Label in any language — Arabic, English, French, German, Spanish, Dutch",
+      "Compliant with EU, GCC, UK, and US labeling regulations",
+      "Nutritional analysis and allergen declarations included",
+      "Recipe and flavor customization available",
+      "Halal, Kosher, and other certification documentation"
+    ],
+    "unlike_brokers_title": "Unlike brokers, ALGHAITH is the manufacturer",
+    "unlike_brokers_desc": "No middleman, no quality uncertainty, no communication gap between what you specify and what we produce.",
+    "request_consultation": "Request a Private Label Consultation"
+  },
+  "why_us_page": {
+    "hero_title": "Why Choose ALGHAITH",
+    "hero_subtitle": "The Difference Is in the Details — And the Details Are in Every Product",
+    "description": "In a market crowded with food processors and exporters, what truly separates a good supplier from a great one? At ALGHAITH, we believe the answer is three things: the quality of your raw materials, the integrity of your process, and the reliability of your commitment to partners.",
+    "reasons": [
+      {
+        "title": "Farm-to-Factory Control",
+        "desc": "ALGHAITH works directly with a network of vetted, trusted farms in Al Gharbia Governorate and across the Nile Delta. This gives us full visibility and control over growing conditions, pesticide use, harvest timing, and produce quality."
+      },
+      {
+        "title": "Advanced IQF & Canning Technology",
+        "desc": "State-of-the-art IQF tunnel freezers, automated blanching systems, modern canning lines, and glass jar filling equipment. IQF freezing means each piece freezes individually in under two minutes."
+      },
+      {
+        "title": "Five International Certifications",
+        "desc": "U.S. FDA, ISO 9001:2015, ISO 22000:2018, Kosher (World of Kashrut), and HALAL (IFNAS). For our partners, this means peace of mind."
+      },
+      {
+        "title": "Eight Product Categories Under One Roof",
+        "desc": "Frozen vegetables, canned & frozen fruits, olives, peppers, pickles, beans & legumes, canned vegetables, and ready-to-eat mahshi products — reducing procurement complexity."
+      },
+      {
+        "title": "Complete Private Label Capability",
+        "desc": "End-to-end private label manufacturing: from recipe customization and packaging design to multi-language labeling and full export compliance for EU, Gulf, and US markets."
+      },
+      {
+        "title": "Consistent, Year-Round Supply",
+        "desc": "Production capacity and cold storage inventory to fulfill large orders consistently throughout the year. Flexible packaging formats for varying market requirements."
+      },
+      {
+        "title": "Deep Egyptian Agricultural Expertise",
+        "desc": "Our team brings deep expertise in Egyptian produce varieties, regional farming cycles, and the specific quality characteristics that international buyers expect."
+      }
+    ]
+  },
+  "products_page": {
+    "hero_title": "Our Products",
+    "hero_subtitle": "Eight Categories of Excellence — All Rooted in Egypt's Finest Soil",
+    "intro_p1": "At ALGHAITH Factory, our product range is designed to cover every segment of the global market for preserved and processed Egyptian produce. From individually quick-frozen vegetables to premium canned fruits, marinated olives to ready-to-eat stuffed dishes — every product we make starts with the same ingredient: the best raw materials Egypt has to offer.",
+    "intro_p2": "All products are available under the ALGHAITH brand or as private label. Packaging formats range from 400g retail units to bulk industrial cans and cartons.",
+    "categories_label": "Categories",
+    "items_available": "Items Available",
+    "product_range": "Product Range",
+    "packaging_options": "Packaging Options",
+    "cats_data": {
+      "frozen-vegetables": {
+        "headline": "IQF-Frozen at the Peak of Freshness — Zero Compromise on Quality",
+        "intro": "Our frozen vegetable line is built on one technology: IQF — Individually Quick Frozen. Unlike conventional block-freezing, IQF encases each individual piece in a shell of ice within seconds of harvest, locking in natural color, texture, and nutritional density that slower methods destroy. Every vegetable in this range is sourced directly from Al Gharbia farms, processed within hours of harvest, and frozen to a standard that top-tier food manufacturers, retailers, and catering chains demand globally.",
+        "packaging": "Available in 10 kg bulk cartons, 5 kg retail bags, and 400g–1 kg retail pouches. Custom private label packaging available.",
+        "products": [
+          {
+            "name": "Frozen Roasted Eggplant (Whole)",
+            "desc": "Fire-roasted, skin-on, ideal for baba ghanoush and Mediterranean dips. Available whole and peeled"
+          },
+          {
+            "name": "Frozen Grilled Eggplant Slices",
+            "desc": "Char-grilled slices, ready to incorporate in mezze platters, sandwiches, and ready meals"
+          },
+          {
+            "name": "Frozen Okra (Whole & Cut)",
+            "desc": "A Gulf and Middle Eastern staple; consistent size grading, vibrant green color"
+          },
+          {
+            "name": "Frozen Green Beans (Whole & Cut)",
+            "desc": "Crisp texture, bright green, available whole, cut, and French-cut"
+          },
+          {
+            "name": "Frozen Carrots (Diced, Sliced & Julienne)",
+            "desc": "Uniform cut sizes for industrial and retail use"
+          },
+          {
+            "name": "Frozen Colored Bell Pepper (Sliced & Diced)",
+            "desc": "Red, yellow, and green; vibrant color and consistent weight"
+          },
+          {
+            "name": "Frozen Diced Onion",
+            "desc": "White and yellow onion varieties; ready-to-cook, no prep required"
+          },
+          {
+            "name": "Frozen Artichoke (Hearts, Quarters & Bottoms)",
+            "desc": "Egypt's finest artichoke, trimmed and IQF-frozen for maximum versatility"
+          },
+          {
+            "name": "Frozen Broccoli Florets",
+            "desc": "Uniform floret size, deep green color, minimum stalk"
+          },
+          {
+            "name": "Frozen Mixed Vegetables",
+            "desc": "Custom blend options available (peas, carrots, corn, green beans)"
+          }
+        ]
+      },
+      "fruits": {
+        "headline": "Egypt's Sweetest Harvests — Frozen Fresh and Canned at Peak Ripeness",
+        "intro": "Egypt's unique climate — long sunshine hours, fertile Nile Delta soil, and optimal temperature ranges — produces fruits of exceptional sweetness and nutritional value. ALGHAITH captures this quality in two preservation formats: IQF freezing for fruits that need to retain their fresh character, and canning in light syrup for fruits where a tender, ready-to-use product is preferred. Both formats deliver the authentic flavor of Egyptian-grown fruit to any market, any season.",
+        "packaging": "Frozen fruits: 10 kg bulk cartons and 400g–1 kg retail. Canned fruits: 400g retail cans, A9 catering cans. Private label available in all formats.",
+        "products": [
+          {
+            "name": "Frozen Strawberries (Whole & Sliced)",
+            "desc": "Sourced from Al Gharbia's celebrated strawberry belt; deep red, naturally sweet, high Brix"
+          },
+          {
+            "name": "Frozen Mango Chunks",
+            "desc": "Egyptian Alphonso and Zebda varieties; golden color, intense natural sweetness, no added sugar"
+          },
+          {
+            "name": "Frozen Guava (Halves & Pulp)",
+            "desc": "Tropical variety grown in the Nile Delta; ideal for food manufacturing, juices, and purees"
+          },
+          {
+            "name": "Frozen Pomegranate Arils",
+            "desc": "Ruby red, packed with antioxidants; ready-to-use for salads, beverages, and garnishes"
+          },
+          {
+            "name": "Canned Mango Halves in Light Syrup",
+            "desc": "Sun-ripened Egyptian mangoes, peeled and halved, preserved in light syrup; premium retail and foodservice format"
+          },
+          {
+            "name": "Canned Apricot Halves in Light Syrup",
+            "desc": "Tender, golden apricot halves in natural syrup; a staple for desserts, pastries, and breakfast products"
+          },
+          {
+            "name": "Canned Pear Halves in Light Syrup",
+            "desc": "Smooth, buttery pear halves preserved in light syrup; ideal for desserts and fruit salads"
+          },
+          {
+            "name": "Canned Figs in Syrup",
+            "desc": "Whole and halved Egyptian figs in light syrup; a premium product for European and specialty food markets"
+          },
+          {
+            "name": "Canned Fruit Salad",
+            "desc": "A vibrant mix of seasonal Egyptian fruits in light syrup; ready-to-serve retail and catering format"
+          }
+        ]
+      },
+      "olives": {
+        "headline": "Premium Egyptian Olives — Marinated, Preserved, and Ready for the World",
+        "intro": "Egypt has one of the oldest olive cultivation traditions in the Mediterranean world. The rich soils of the Delta and Upper Egypt produce olives of exceptional oil content and flavor depth. At ALGHAITH, we source from carefully selected Egyptian olive farms to produce a premium range of canned and jarred olives that meet the highest standards demanded by international retailers, food manufacturers, and specialty importers. Every olive we process is selected for consistent size, color uniformity, and flavor profile before being marinated or brined and sealed for export.",
+        "packaging": "Available in glass jars (180ml, 370ml, 720ml), retail cans (400g), and bulk catering cans (A9/A10). Private label available.",
+        "products": [
+          {
+            "name": "Sliced Black Olives in Brine",
+            "desc": "Classic black olives, uniformly sliced, packed in natural brine. The most requested olive product for pizza manufacturers, salad bar operators, and retail chains"
+          },
+          {
+            "name": "Whole Black Olives in Brine",
+            "desc": "Naturally ripened black olives, pitted or unpitted, preserved in brine. Available in multiple size grades (Colossal to Medium)"
+          },
+          {
+            "name": "Green Olives Whole in Brine",
+            "desc": "Firm green olives harvested before full ripening; mild, slightly tangy flavor. Available pitted or unpitted"
+          },
+          {
+            "name": "Green Olives Stuffed with Red Pepper",
+            "desc": "A premium retail and food service product; green olives filled with pimento pepper"
+          },
+          {
+            "name": "Pitted Green Olives",
+            "desc": "De-stoned green olives in brine; ideal for cooking, charcuterie boards, and industrial food applications"
+          },
+          {
+            "name": "Marinated Black Olives in Sunflower Oil with Herbs",
+            "desc": "Premium olives marinated in oil with Mediterranean herbs; a gourmet retail product for European and North American specialty markets"
+          },
+          {
+            "name": "Kalamata-Style Olives in Brine & Vinegar",
+            "desc": "Dark purple, almond-shaped; a specialty product for Mediterranean food importers"
+          }
+        ]
+      },
+      "peppers": {
+        "headline": "From Sweet to Fiery — Egypt's Finest Preserved Peppers",
+        "intro": "Pepper cultivation is a major agricultural industry in Egypt, with Al Gharbia producing some of the country's highest-grade bell peppers, chili peppers, and sweet capsicum varieties. ALGHAITH's pepper range spans the full flavor spectrum — from mildly sweet fire-roasted capsicum to intensely spiced jalapeños — preserved in brine, sunflower oil, or vinegar to suit diverse international market preferences. Our roasted pepper products, in particular, have become a flagship export category, prized by European deli chains and Mediterranean specialty importers.",
+        "packaging": "Available in glass jars (370ml, 720ml), retail cans (400g), and bulk catering cans. Private label available.",
+        "products": [
+          {
+            "name": "Roasted Capsicum (Bell Pepper) in Brine & Sunflower Oil",
+            "desc": "Whole red capsicum, flame-roasted, peeled, and preserved. Rich smoky flavor, deep red color; a premium product for European gourmet retail and foodservice"
+          },
+          {
+            "name": "Roasted Green Chili Pepper in Sunflower Oil",
+            "desc": "Whole green chili peppers, fire-roasted and preserved in premium sunflower oil; popular in Middle Eastern and Mediterranean markets"
+          },
+          {
+            "name": "Roasted Green Chili Pepper in Brine",
+            "desc": "Oil-free version of the above; clean brine preservation for calorie-conscious and manufacturing segments"
+          },
+          {
+            "name": "Roasted Peeled Pepper in Brine (Assorted Colors)",
+            "desc": "Red, yellow, and green roasted peppers, peeled and packed in brine; a versatile product for antipasto, pizza toppings, and ready meals"
+          },
+          {
+            "name": "Pickled Jalapeño Slices",
+            "desc": "Premium quality jalapeño, uniform heat level, in seasoned brine; a top-selling product for pizza chains, fast food, and retail"
+          },
+          {
+            "name": "Pickled Jalapeño Whole",
+            "desc": "Whole jalapeño peppers preserved in brine; ideal for specialty retailers and food manufacturers"
+          },
+          {
+            "name": "Pickled Banana Peppers",
+            "desc": "Mild, sweet banana peppers in vinegar brine; popular in European and American markets for sandwich and pizza use"
+          },
+          {
+            "name": "Pickled Mexican Peppers (Nacho Peppers)",
+            "desc": "Classic sliced mixed peppers in vinegar brine; the standard topping for Tex-Mex and fast food chains"
+          },
+          {
+            "name": "Pickled Lombardi Peppers",
+            "desc": "Long mild peppers in natural brine; a traditional Middle Eastern pickling staple"
+          }
+        ]
+      },
+      "pickles": {
+        "headline": "Traditional Flavors, International Quality — Egypt's Finest Preserved Vegetables",
+        "intro": "Pickling is one of the oldest food preservation traditions in Egypt, and ALGHAITH has elevated this craft to an industrial scale without sacrificing the authentic character that consumers love. Our pickled vegetable range uses food-grade brine solutions, natural vinegar, and traditional Egyptian recipes to produce products with the sharp, satisfying flavor that Middle Eastern, European, and North American consumers recognize and trust. All products are manufactured in our dedicated pickling facility under strictly controlled hygiene and food safety conditions.",
+        "packaging": "Available in glass jars (500ml, 720ml, 1L, 2L) and retail cans (400g). Private label available in all formats.",
+        "products": [
+          {
+            "name": "Pickled Cucumber (Gherkins)",
+            "desc": "Classic crisp cucumber pickles in seasoned brine; available whole, sliced, and quartered spears. Egypt's most exported pickle product"
+          },
+          {
+            "name": "Pickled Turnip (Lift)",
+            "desc": "The vibrant pink mezze staple, naturally colored with beets; a must-have for Middle Eastern and Arabic diaspora markets"
+          },
+          {
+            "name": "Pickled Lupine Beans (Termis)",
+            "desc": "Preserved lupini beans in seasoned brine; a popular street food snack across Egypt, the Levant, and North Africa"
+          },
+          {
+            "name": "Pickled Chickpeas",
+            "desc": "Whole cooked chickpeas preserved in tangy brine; a protein-rich snack and mezze item"
+          },
+          {
+            "name": "Preserved Vine Leaves in Brine",
+            "desc": "Tender grape leaves preserved in brine, ready for rolling; a key ingredient for Mahshi preparation at home and in foodservice"
+          },
+          {
+            "name": "Pickled Mixed Vegetables",
+            "desc": "A colorful assortment of pickled cauliflower, carrot, green pepper, and celery in brine; a popular retail item for supermarkets in Gulf and European markets"
+          },
+          {
+            "name": "Pickled Olives in Brine (Green & Black)",
+            "desc": "Traditional brine-cured olives; an everyday staple for Egyptian and Middle Eastern breakfast tables"
+          }
+        ]
+      },
+      "beans-legumes": {
+        "headline": "Everyday Staples — Premium Canned Legumes Ready for Any Market",
+        "intro": "Legumes are the cornerstone of diets across the Middle East, Mediterranean, and beyond. ALGHAITH's canned legume range brings the rich nutritional value and authentic taste of Egypt's finest pulses to your customers in convenient, ready-to-use formats — cooked, seasoned where applicable, and sealed for maximum shelf life. Our canned legumes are consistently one of our top-selling export categories, particularly in Gulf supermarkets, Egyptian diaspora retail, and health-focused food chains globally.",
+        "packaging": "Available in 400g retail cans, A9 catering cans (2.65 kg), and A10 bulk industrial cans (3 kg). Private label available.",
+        "products": [
+          {
+            "name": "Canned Fava Beans — Plain (Ful Medames)",
+            "desc": "Egypt's national dish in a can. Cooked fava beans in natural brine, ready to season and serve. The single most recognizable Egyptian food product for international markets"
+          },
+          {
+            "name": "Canned Fava Beans — Seasoned (Ful Medames with Oil & Spices)",
+            "desc": "Pre-seasoned with premium Egyptian sunflower oil, cumin, and lemon; a ready-to-heat product for retail and foodservice convenience"
+          },
+          {
+            "name": "Canned Chickpeas (Hummus Maslouk)",
+            "desc": "Premium whole chickpeas in natural brine; ready for hummus, salads, curries, and stews"
+          },
+          {
+            "name": "Canned White Beans in Brine",
+            "desc": "Soft white haricot beans in natural brine; a versatile ingredient for soups, stews, and salads"
+          },
+          {
+            "name": "Canned White Beans in Red Sauce (Fasolea)",
+            "desc": "Tender white beans in rich seasoned tomato sauce; a ready-to-eat product popular in Gulf and North African markets"
+          },
+          {
+            "name": "Canned Sweet Corn (Whole Kernel)",
+            "desc": "Tender, naturally sweet corn kernels in brine; vibrant yellow, consistent sweetness"
+          },
+          {
+            "name": "Canned Lupin Beans (Termis)",
+            "desc": "A popular Egyptian snack, preserved in brine; increasingly popular as a high-protein snack in European health food markets"
+          },
+          {
+            "name": "Canned Green Peas in Brine",
+            "desc": "Whole tender green peas; ideal for salads, side dishes, and industrial food manufacturing"
+          }
+        ]
+      },
+      "canned-vegetables": {
+        "headline": "Egypt's Farm-Fresh Vegetables — Sealed and Preserved at Their Best",
+        "intro": "ALGHAITH's canned vegetable range captures the natural quality of Egyptian farm produce at its peak and delivers it to your market in a shelf-stable, convenient format. From our signature artichoke products — for which Egypt is globally recognized — to the versatile canned tomato range that underpins so much of the world's cooking, every product is processed under the strictest food safety standards to guarantee consistent quality in every can.",
+        "packaging": "Available in 400g retail cans, A9 catering cans, and A10 bulk cans. Customized cuts (diced, sliced, crushed) available upon request.",
+        "products": [
+          {
+            "name": "Canned Artichoke Hearts in Brine",
+            "desc": "Tender artichoke hearts, trimmed and preserved in natural brine. A versatile premium ingredient for salads, pasta, pizza, and dips"
+          },
+          {
+            "name": "Canned Artichoke Quarters in Brine",
+            "desc": "Ready-to-use quartered artichoke in brine; perfect for industrial food manufacturing, catering, and antipasto products"
+          },
+          {
+            "name": "Canned Artichoke Bottoms (Tablets) in Brine",
+            "desc": "The prized heart of the artichoke, sliced into discs; a premium product for gourmet food manufacturers and European specialty importers"
+          },
+          {
+            "name": "Roasted Artichokes in Sunflower Oil with Spices (Roman Style)",
+            "desc": "Flame-grilled artichoke hearts marinated in oil with garlic, herbs, and spices; a ready-to-eat gourmet product for European premium retail"
+          },
+          {
+            "name": "Canned Whole Peeled Tomatoes",
+            "desc": "Selected Roma-type tomatoes, peeled and preserved in natural tomato juice. Egypt's most exported canned vegetable product"
+          },
+          {
+            "name": "Canned Diced Tomatoes",
+            "desc": "Pre-cut uniform tomato pieces in natural juice; ideal for industrial cooking, ready meal production, and foodservice"
+          },
+          {
+            "name": "Canned Crushed Tomatoes",
+            "desc": "Smooth, concentrated crushed tomatoes in natural juice; a versatile base for sauces, soups, and condiments"
+          },
+          {
+            "name": "Canned Mushrooms (Whole & Sliced)",
+            "desc": "Premium mushrooms preserved in brine; a food service and retail staple"
+          },
+          {
+            "name": "Canned Sweet Potato",
+            "desc": "Egyptian sweet potato, cooked and preserved; ready for purees, pies, and baby food manufacturing"
+          },
+          {
+            "name": "Canned Eggplant (Roasted)",
+            "desc": "Flame-roasted eggplant puree in cans; the perfect base for baba ghanoush and Mediterranean dips"
+          },
+          {
+            "name": "Stuffed Grape Leaves (Warak Enab) (Ready to Eat)",
+            "desc": "Premium vine leaves stuffed with a traditional Egyptian rice and herb mixture (dill, parsley, coriander). Cooked and preserved in light brine and olive oil. Our flagship ready-to-eat product"
+          },
+          {
+            "name": "Stuffed Zucchini (Kousa Mahshi) (Ready to Eat)",
+            "desc": "Tender Egyptian zucchini, center-cored and stuffed with our signature seasoned rice blend. Cooked perfectly to maintain structure while remaining soft"
+          },
+          {
+            "name": "Stuffed Bell Peppers (Ready to Eat)",
+            "desc": "Sweet bell peppers loaded with seasoned rice; a colorful and flavorful traditional dish"
+          },
+          {
+            "name": "Stuffed Eggplant (Batingan Mahshi) (Ready to Eat)",
+            "desc": "Small, tender eggplants (black or white varieties) stuffed with rice and spices. A challenging product to preserve, perfected by ALGHAITH"
+          },
+          {
+            "name": "Stuffed Cabbage Rolls (Malfouf) (Ready to Eat)",
+            "desc": "Soft cabbage leaves wrapped around our seasoned rice mix, slow-cooked to perfection"
+          },
+          {
+            "name": "Stuffed Vine Leaves — Premium with Lemon & Olive Oil (Ready to Eat)",
+            "desc": "A gourmet line specifically tailored for European and Levantine markets, featuring extra virgin olive oil and a prominent lemon profile"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,7 +1,20 @@
 import { Link } from "react-router-dom";
 import logoImg from "@/assets/logo.png";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
+
+  const footerLinks = [
+    { label: t('nav.about'), to: "/about" },
+    { label: t('nav.why_us'), to: "/why-us" },
+    { label: t('nav.private_label'), to: "/private-label" },
+    { label: t('nav.services'), to: "/services" },
+    { label: t('nav.certifications'), to: "/certifications" },
+    { label: t('nav.gallery'), to: "/gallery" },
+  ];
+
   return (
     <footer className="relative bg-foreground overflow-hidden py-16">
       {/* Decorative gradient overlay */}
@@ -16,14 +29,22 @@ const Footer = () => {
               <img src={logoImg} alt="ALGHAITH" className="h-12 w-auto object-contain" />
             </div>
             <p className="text-white/70 leading-relaxed mb-6 font-medium">
-              Processing and Preserving Fruits & Vegetables since 2014. Egypt's finest harvests, world-class quality.
+              {t('footer.desc')}
             </p>
           </div>
 
           <div>
-            <h4 className="font-display font-bold text-white mb-6 text-sm uppercase tracking-[0.2em]">Products</h4>
+            <h4 className="font-display font-bold text-white mb-6 text-sm uppercase tracking-[0.2em]">{t('footer.products_title')}</h4>
             <ul className="space-y-3 text-sm font-medium text-white/60">
-              {["Frozen Vegetables", "Fruits", "Olives", "Peppers", "Pickles", "Beans & Legumes", "Canned Vegetables", "Ready to Eat"].map((p) => (
+              {[
+                t('product_categories.cats.frozen-vegetables'),
+                t('product_categories.cats.fruits'),
+                t('product_categories.cats.olives'),
+                t('product_categories.cats.peppers'),
+                t('product_categories.cats.pickles'),
+                t('product_categories.cats.beans-legumes'),
+                t('product_categories.cats.canned-vegetables')
+              ].map((p) => (
                 <li key={p}>
                   <Link to="/products" className="hover:text-primary transition-colors flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
@@ -35,16 +56,9 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-display font-bold text-white mb-6 text-sm uppercase tracking-[0.2em]">Company</h4>
+            <h4 className="font-display font-bold text-white mb-6 text-sm uppercase tracking-[0.2em]">{t('footer.company_title')}</h4>
             <ul className="space-y-3 text-sm font-medium text-white/60">
-              {[
-                { label: "About Us", to: "/about" },
-                { label: "Why Choose Us", to: "/why-us" },
-                { label: "Private Label", to: "/private-label" },
-                { label: "Services", to: "/services" },
-                { label: "Certifications", to: "/certifications" },
-                { label: "Gallery", to: "/gallery" },
-              ].map((item) => (
+              {footerLinks.map((item) => (
                 <li key={item.label}>
                   <Link to={item.to} className="hover:text-primary transition-colors flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
@@ -56,7 +70,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-display font-bold text-white mb-6 text-sm uppercase tracking-[0.2em]">Contact</h4>
+            <h4 className="font-display font-bold text-white mb-6 text-sm uppercase tracking-[0.2em]">{t('footer.contact_title')}</h4>
             <ul className="space-y-4 text-sm font-medium text-white/60">
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-0.5">✉</span>
@@ -64,11 +78,11 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-0.5">📞</span>
-                <a href="tel:+201091091537" className="hover:text-white transition-colors">+2 01091091537</a>
+                <a href="tel:+201091091537" className="hover:text-white transition-colors" dir="ltr">+2 01091091537</a>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-0.5">📍</span>
-                <span>Alatwa Alqeblia, Qutour<br />Al Gharbia, Egypt</span>
+                <span>{t('footer.address')}<br />{t('footer.address2')}</span>
               </li>
             </ul>
           </div>
@@ -76,10 +90,10 @@ const Footer = () => {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/50 font-medium text-center md:text-left">
-            © {new Date().getFullYear()} ALGHAITH Factory for Processing and Preserving Fruits & Vegetables.<br className="md:hidden" /> All rights reserved.
+            {t('footer.copyright', { year: currentYear })} <br className="md:hidden" /> {t('footer.rights')}
           </p>
           <p className="text-sm font-bold text-white/30 text-center md:text-right">
-            Quality you can trust — Freshness you can taste.
+            {t('footer.tagline')}
           </p>
         </div>
       </div>

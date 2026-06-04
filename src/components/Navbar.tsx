@@ -2,23 +2,30 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import logoImg from "@/assets/logo.png";
-
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Products", href: "/products" },
-  { label: "Why Us", href: "/why-us" },
-  { label: "Private Label", href: "/private-label" },
-  { label: "Services", href: "/services" },
-  { label: "Certifications", href: "/certifications" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Contact", href: "/contact" },
-];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
+
+  const navLinks = [
+    { label: t('nav.home'), href: "/" },
+    { label: t('nav.about'), href: "/about" },
+    { label: t('nav.products'), href: "/products" },
+    { label: t('nav.why_us'), href: "/why-us" },
+    { label: t('nav.private_label'), href: "/private-label" },
+    { label: t('nav.services'), href: "/services" },
+    { label: t('nav.certifications'), href: "/certifications" },
+    { label: t('nav.gallery'), href: "/gallery" },
+    { label: t('nav.contact'), href: "/contact" },
+  ];
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'ar' ? 'en' : 'ar';
+    i18n.changeLanguage(newLang);
+  };
 
   return (
     <>
@@ -46,17 +53,33 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <Link
-              to="/contact"
-              className="bg-gradient-to-r from-primary to-secondary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-bold hover:shadow-lg hover:shadow-primary/30 transition-all duration-300"
-            >
-              Get Quote
-            </Link>
+            <div className="flex items-center gap-4">
+              <button 
+                onClick={toggleLanguage}
+                className="text-sm font-bold text-primary border border-primary/30 rounded-full px-3 py-1 hover:bg-primary/10 transition-colors"
+              >
+                {t('nav.lang_switcher')}
+              </button>
+              <Link
+                to="/contact"
+                className="bg-gradient-to-r from-primary to-secondary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-bold hover:shadow-lg hover:shadow-primary/30 transition-all duration-300"
+              >
+                {t('nav.get_quote')}
+              </Link>
+            </div>
           </div>
 
-          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-foreground hover:text-primary transition-colors">
-            {isOpen ? <X size={26} /> : <Menu size={26} />}
-          </button>
+          <div className="flex items-center gap-4 lg:hidden">
+            <button 
+              onClick={toggleLanguage}
+              className="text-sm font-bold text-primary border border-primary/30 rounded-full px-3 py-1 hover:bg-primary/10 transition-colors"
+            >
+              {t('nav.lang_switcher')}
+            </button>
+            <button onClick={() => setIsOpen(!isOpen)} className="text-foreground hover:text-primary transition-colors">
+              {isOpen ? <X size={26} /> : <Menu size={26} />}
+            </button>
+          </div>
         </nav>
       </motion.div>
 
@@ -84,7 +107,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="mt-4 text-center bg-gradient-to-r from-primary to-secondary text-primary-foreground px-6 py-3 rounded-full font-bold hover:opacity-90 transition-opacity"
               >
-                Get Quote
+                {t('nav.get_quote')}
               </Link>
             </div>
           </motion.div>

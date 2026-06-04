@@ -5,40 +5,43 @@ import { motion } from "framer-motion";
 import { Sprout, Factory, Eye, Target, Heart, Lightbulb, Leaf, Users } from "lucide-react";
 import factoryImg from "@/assets/alghaith-factory.jpg";
 import farmImg from "@/assets/egyptian-farm.jpg";
-
-const farmToForkSteps = [
-  { step: "01", title: "Farm Selection", desc: "We partner exclusively with vetted farms in Al Gharbia's fertile belt, where soil quality, water purity, and farming practices meet our strict standards." },
-  { step: "02", title: "Harvest at Peak", desc: "Produce is harvested at the precise moment of peak ripeness — not before, not after. This single decision is where quality is either won or lost." },
-  { step: "03", title: "Factory Processing", desc: "Within hours of harvest, produce enters our processing lines: washed, graded, blanched, and either IQF-frozen or sealed in airtight cans and jars." },
-  { step: "04", title: "Quality Assurance & Export", desc: "Every batch passes in-house microbiological and chemical testing before being released. Certified documentation accompanies every shipment." },
-];
-
-const values = [
-  { icon: Heart, title: "Quality Without Compromise", desc: "We never ship a product we would not proudly serve at our own table." },
-  { icon: Eye, title: "Transparency & Trust", desc: "Our clients know exactly what they are getting — the same quality, every single time." },
-  { icon: Lightbulb, title: "Innovation", desc: "We invest continuously in new processing technologies and product development." },
-  { icon: Leaf, title: "Sustainability", desc: "Committed to responsible agricultural practices that protect Egypt's natural resources." },
-  { icon: Users, title: "Customer Partnership", desc: "Our clients are not just buyers — they are partners. We accept custom orders and private label requests." },
-];
-
-const factoryFeatures = [
-  "IQF Tunnel Freezing Lines",
-  "Advanced Blanching & Washing Systems",
-  "Automated Canning & Sealing Lines",
-  "Glass Jar Filling Line",
-  "Cold Storage Facilities",
-  "In-House Quality Control Laboratory",
-  "Private Label Packaging Line",
-];
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
+  const farmToForkSteps = [
+    { step: "01", title: t('about_page.steps.s1_title'), desc: t('about_page.steps.s1_desc') },
+    { step: "02", title: t('about_page.steps.s2_title'), desc: t('about_page.steps.s2_desc') },
+    { step: "03", title: t('about_page.steps.s3_title'), desc: t('about_page.steps.s3_desc') },
+    { step: "04", title: t('about_page.steps.s4_title'), desc: t('about_page.steps.s4_desc') },
+  ];
+
+  const values = [
+    { icon: Heart, title: t('about_page.values.v1_title'), desc: t('about_page.values.v1_desc') },
+    { icon: Eye, title: t('about_page.values.v2_title'), desc: t('about_page.values.v2_desc') },
+    { icon: Lightbulb, title: t('about_page.values.v3_title'), desc: t('about_page.values.v3_desc') },
+    { icon: Leaf, title: t('about_page.values.v4_title'), desc: t('about_page.values.v4_desc') },
+    { icon: Users, title: t('about_page.values.v5_title'), desc: t('about_page.values.v5_desc') },
+  ];
+
+  const factoryFeatures = [
+    t('about_page.factory_features.0'),
+    t('about_page.factory_features.1'),
+    t('about_page.factory_features.2'),
+    t('about_page.factory_features.3'),
+    t('about_page.factory_features.4'),
+    t('about_page.factory_features.5'),
+    t('about_page.factory_features.6'),
+  ];
+
   return (
     <div className="min-h-screen">
       <Navbar />
       <div>
         <PageHero
-          title="More Than a Factory"
-          subtitle="We Are Egypt's Agricultural Legacy"
+          title={t('about_page.hero_title')}
+          subtitle={t('about_page.hero_subtitle')}
           bgImage={farmImg}
         />
 
@@ -46,15 +49,15 @@ const About = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-6 max-w-4xl">
             <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-              <h2 className="font-display text-3xl font-bold text-foreground mb-6">Our Story</h2>
+              <h2 className="font-display text-3xl font-bold text-foreground mb-6">{t('about_page.story_title')}</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                ALGHAITH Factory was born from a deep belief in two things: the unmatched richness of Egyptian soil, and the world's need for honest, high-quality food. Founded in 2014 in Alatwa Alqeblia, Qutour, Al Gharbia — a governorate historically known as the backbone of Egypt's agricultural output — our factory was built from the ground up with a single purpose: to process and preserve Egypt's finest fruits and vegetables while maintaining every gram of their natural value, flavor, and nutrition.
+                {t('about_page.story_p1')}
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Over the years, we have grown from a regional processor into a globally recognized exporter, earning certifications from the world's most demanding food safety authorities: the U.S. FDA, ISO 9001:2015, ISO 22000:2018, Kosher (World of Kashrut), and HALAL (IFNAS).
+                {t('about_page.story_p2')}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Today, ALGHAITH serves leading retailers, food manufacturers, and private-label brands in the Gulf, Europe, and the Americas. Our eight product categories span frozen vegetables and fruits, canned legumes, olives, stuffed vegetables, artichokes, pickles, and roasted peppers.
+                {t('about_page.story_p3')}
               </p>
             </motion.div>
           </div>
@@ -64,7 +67,7 @@ const About = () => {
         <section className="py-24 bg-section-alt relative overflow-hidden">
           <div className="container mx-auto px-6 max-w-5xl">
             <h2 className="font-display text-4xl font-bold text-foreground text-center mb-16">
-              Farm to Fork — <span className="text-primary">Complete Control</span> at Every Stage
+              {t('about_page.farm_to_fork_title')} <span className="text-primary">{t('about_page.farm_to_fork_highlight')}</span> {t('about_page.farm_to_fork_suffix')}
             </h2>
 
             <div className="relative">
@@ -83,10 +86,10 @@ const About = () => {
                       }`}
                   >
                     {/* Content Box */}
-                    <div className={`flex-1 md:w-1/2 w-full ${i % 2 === 0 ? "md:pl-12 lg:pl-16" : "md:pr-12 lg:pr-16"
+                    <div className={`flex-1 md:w-1/2 w-full ${i % 2 === 0 ? "md:pl-12 lg:pl-16 rtl:md:pr-12 rtl:lg:pr-16 rtl:md:pl-0 rtl:lg:pl-0" : "md:pr-12 lg:pr-16 rtl:md:pl-12 rtl:lg:pl-16 rtl:md:pr-0 rtl:lg:pr-0"
                       } mb-8 md:mb-0`}>
                       <div className="bg-background border border-border p-8 rounded-3xl shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-300 relative overflow-hidden">
-                        <div className="font-display text-6xl font-extrabold text-primary/5 absolute -bottom-4 right-4 pointer-events-none group-hover:scale-110 group-hover:text-primary/10 transition-transform duration-500">
+                        <div className="font-display text-6xl font-extrabold text-primary/5 absolute -bottom-4 right-4 rtl:left-4 rtl:right-auto pointer-events-none group-hover:scale-110 group-hover:text-primary/10 transition-transform duration-500">
                           {s.step}
                         </div>
                         <h3 className="font-display text-2xl font-bold text-foreground mb-3 relative z-10">{s.title}</h3>
@@ -114,16 +117,16 @@ const About = () => {
             <div className="grid md:grid-cols-2 gap-12">
               <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <Target className="w-8 h-8 text-primary mb-4" />
-                <h2 className="font-display text-2xl font-bold text-foreground mb-4">Our Vision</h2>
+                <h2 className="font-display text-2xl font-bold text-foreground mb-4">{t('about_page.vision_title')}</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  To be the most trusted name in Egyptian food processing — a bridge between the world's finest farmland and the global consumer's table. We envision a world where every household, regardless of geography, has access to the natural goodness of fresh Egyptian produce.
+                  {t('about_page.vision_desc')}
                 </p>
               </motion.div>
               <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <Sprout className="w-8 h-8 text-primary mb-4" />
-                <h2 className="font-display text-2xl font-bold text-foreground mb-4">Our Mission</h2>
+                <h2 className="font-display text-2xl font-bold text-foreground mb-4">{t('about_page.mission_title')}</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  To produce, package, and export the finest frozen and canned fruits and vegetables from Egypt's most fertile farms — meeting the highest international standards of quality, safety, and taste.
+                  {t('about_page.mission_desc')}
                 </p>
               </motion.div>
             </div>
@@ -133,11 +136,11 @@ const About = () => {
         {/* Values */}
         <section className="py-24 bg-section-alt">
           <div className="container mx-auto px-6">
-            <h2 className="font-display text-4xl font-bold text-foreground text-center mb-16">Our Values</h2>
+            <h2 className="font-display text-4xl font-bold text-foreground text-center mb-16">{t('about_page.values_title')}</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {values.map((v, i) => (
                 <motion.div
-                  key={v.title}
+                  key={i}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -161,13 +164,13 @@ const About = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <Factory className="w-8 h-8 text-primary mb-4" />
-                <h2 className="font-display text-3xl font-bold text-foreground mb-6">Our Factory</h2>
+                <h2 className="font-display text-3xl font-bold text-foreground mb-6">{t('about_page.factory_title')}</h2>
                 <p className="text-muted-foreground mb-6">
-                  Located in the heart of Al Gharbia Governorate — one of Egypt's richest agricultural regions — our factory is equipped with modern processing, freezing, and canning lines designed for efficiency, hygiene, and precision.
+                  {t('about_page.factory_desc')}
                 </p>
                 <ul className="space-y-3">
-                  {factoryFeatures.map((f) => (
-                    <li key={f} className="flex items-center gap-3 text-sm text-muted-foreground">
+                  {factoryFeatures.map((f, i) => (
+                    <li key={i} className="flex items-center gap-3 text-sm text-muted-foreground">
                       <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
                       {f}
                     </li>
