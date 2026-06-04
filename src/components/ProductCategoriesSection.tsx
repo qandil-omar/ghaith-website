@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 import imgVeg from "@/assets/category-frozen.png";
 import imgFruits from "@/assets/category-fruits.png";
@@ -11,18 +12,19 @@ import imgBeans from "@/assets/category-beans.png";
 import imgCanned from "@/assets/category-canned.jpg";
 import imgReady from "@/assets/category-ready.jpg";
 
-const categories = [
-  { img: imgVeg, name: "Frozen Vegetables", items: "10 Products", slug: "frozen-vegetables" },
-  { img: imgFruits, name: "Fruits", items: "9 Products", slug: "fruits" },
-  { img: imgOlives, name: "Olives", items: "7 Products", slug: "olives" },
-  { img: imgPeppers, name: "Peppers", items: "9 Products", slug: "peppers" },
-  { img: imgPickles, name: "Pickles", items: "7 Products", slug: "pickles" },
-  { img: imgBeans, name: "Beans & Legumes", items: "8 Products", slug: "beans" },
-  { img: imgCanned, name: "Canned Vegetables", items: "10 Products", slug: "canned-vegetables" },
-  { img: imgReady, name: "Ready to Eat", items: "6 Products", slug: "ready-to-eat" },
-];
-
 const ProductCategoriesSection = () => {
+  const { t } = useTranslation();
+
+  const categories = [
+    { img: imgVeg, name: t('product_categories.cats.frozen-vegetables'), items: `10 ${t('product_categories.products_word')}`, slug: "frozen-vegetables" },
+    { img: imgFruits, name: t('product_categories.cats.fruits'), items: `9 ${t('product_categories.products_word')}`, slug: "fruits" },
+    { img: imgOlives, name: t('product_categories.cats.olives'), items: `7 ${t('product_categories.products_word')}`, slug: "olives" },
+    { img: imgPeppers, name: t('product_categories.cats.peppers'), items: `9 ${t('product_categories.products_word')}`, slug: "peppers" },
+    { img: imgPickles, name: t('product_categories.cats.pickles'), items: `7 ${t('product_categories.products_word')}`, slug: "pickles" },
+    { img: imgBeans, name: t('product_categories.cats.beans-legumes'), items: `8 ${t('product_categories.products_word')}`, slug: "beans-legumes" },
+    { img: imgCanned, name: t('product_categories.cats.canned-vegetables'), items: `16 ${t('product_categories.products_word')}`, slug: "canned-vegetables" },
+  ];
+
   return (
     <section className="py-24 bg-section-alt">
       <div className="container mx-auto px-6">
@@ -32,19 +34,19 @@ const ProductCategoriesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-[0.2em] text-primary mb-3">Our Products</p>
+          <p className="text-sm uppercase tracking-[0.2em] text-primary mb-3">{t('product_categories.subtitle')}</p>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Eight Categories, One Standard of Excellence
+            {t('product_categories.title')}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore our comprehensive range of premium Egyptian agricultural products, processed and preserved to perfection for the global market.
+            {t('product_categories.description')}
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((cat, i) => (
             <motion.div
-              key={cat.name}
+              key={cat.slug}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -65,10 +67,10 @@ const ProductCategoriesSection = () => {
 
                 <div className="mt-auto pt-4 border-t border-border">
                   <Link
-                    to={`/products`} // In a real app we'd scroll to the id or handle route state
+                    to={`/products`} 
                     className="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:text-secondary transition-colors"
                   >
-                    View Range <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    {t('product_categories.view_range')} <ArrowRight className="w-4 h-4 group-hover:translate-x-1 rtl:rotate-180 transition-transform" />
                   </Link>
                 </div>
               </div>
@@ -82,7 +84,7 @@ const ProductCategoriesSection = () => {
             className="bg-gradient-to-r from-primary to-secondary text-primary-foreground px-10 py-4 rounded-full font-bold text-lg hover:from-secondary hover:to-primary transition-all duration-300 shadow-xl hover:shadow-2xl inline-flex items-center gap-2 relative overflow-hidden group"
           >
             <div className="absolute inset-0 bg-white/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
-            <span className="relative z-10">Explore Complete Catalog</span>
+            <span className="relative z-10">{t('product_categories.explore_catalog')}</span>
           </Link>
         </div>
       </div>

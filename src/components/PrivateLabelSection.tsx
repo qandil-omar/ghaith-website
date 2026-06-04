@@ -1,40 +1,43 @@
 import { motion } from "framer-motion";
 import { Factory, Sprout, Handshake, Globe } from "lucide-react";
 import factoryImg from "@/assets/factory.jpg";
-
-const capabilities = [
-    "Full product range available — all 8 categories",
-    "Cans, Glass Jars, and Frozen bulk & retail formats",
-    "Multi-language labeling & packaging design",
-    "Compliant with EU, GCC, UK, and US regulations",
-    "Nutritional analysis & allergen declarations included",
-    "Recipe and flavor customization available",
-];
-
-const features = [
-    {
-        icon: Factory,
-        title: "State-of-the-Art Manufacturing",
-        desc: "Latest technology and automated production lines",
-    },
-    {
-        icon: Sprout,
-        title: "Premium Ingredients",
-        desc: "Sourced directly from our trusted Egyptian farms",
-    },
-    {
-        icon: Handshake,
-        title: "Dedicated Partnership",
-        desc: "Close collaboration for customized solutions",
-    },
-    {
-        icon: Globe,
-        title: "Global Scale",
-        desc: "International reach to Europe, Gulf and Americas",
-    },
-];
+import { useTranslation } from "react-i18next";
 
 const PrivateLabelSection = () => {
+    const { t } = useTranslation();
+
+    const capabilities = [
+        t('private_label_section.capabilities.0'),
+        t('private_label_section.capabilities.1'),
+        t('private_label_section.capabilities.2'),
+        t('private_label_section.capabilities.3'),
+        t('private_label_section.capabilities.4'),
+        t('private_label_section.capabilities.5'),
+    ];
+
+    const features = [
+        {
+            icon: Factory,
+            title: t('private_label_section.f1_title'),
+            desc: t('private_label_section.f1_desc'),
+        },
+        {
+            icon: Sprout,
+            title: t('private_label_section.f2_title'),
+            desc: t('private_label_section.f2_desc'),
+        },
+        {
+            icon: Handshake,
+            title: t('private_label_section.f3_title'),
+            desc: t('private_label_section.f3_desc'),
+        },
+        {
+            icon: Globe,
+            title: t('private_label_section.f4_title'),
+            desc: t('private_label_section.f4_desc'),
+        },
+    ];
+
     return (
         <section className="py-24 bg-section-alt">
             <div className="container mx-auto px-6">
@@ -47,33 +50,25 @@ const PrivateLabelSection = () => {
                             viewport={{ once: true }}
                         >
                             <div className="inline-block bg-primary/10 text-primary border border-primary/20 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6">
-                                Private Label
+                                {t('private_label_section.badge')}
                             </div>
 
                             <h2 className="font-display text-4xl md:text-5xl lg:text-5xl font-extrabold text-foreground mb-4 leading-tight">
-                                Expert Private Label
+                                {t('private_label_section.title1')}
                                 <br />
-                                Producers
+                                {t('private_label_section.title2')}
                             </h2>
 
                             <p className="font-display text-xl md:text-2xl italic text-primary mb-6 font-semibold">
-                                Your brand, our expertise.
+                                {t('private_label_section.subtitle')}
                             </p>
 
                             <div className="text-muted-foreground leading-relaxed space-y-6 mb-10 text-lg">
                                 <p>
-                                    We produce tailor-made private label products for our international
-                                    clients and partners all over the world. From sourcing premium
-                                    ingredients from Egypt's richest agricultural belts to state-of-the-art
-                                    manufacturing, we prioritize quality at every step.
+                                    {t('private_label_section.desc1')}
                                 </p>
                                 <p>
-                                    As a trusted partner for private label manufacturing, we
-                                    understand the unique requirements and aspirations of our
-                                    clients. Our dedicated team of professionals works closely
-                                    with each client to develop and deliver customized private
-                                    label solutions that align with their brand vision and market
-                                    positioning.
+                                    {t('private_label_section.desc2')}
                                 </p>
                             </div>
                         </motion.div>
@@ -82,7 +77,7 @@ const PrivateLabelSection = () => {
                         <div className="grid sm:grid-cols-2 gap-4 mb-8">
                             {features.map((feature, idx) => (
                                 <motion.div
-                                    key={feature.title}
+                                    key={idx}
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
@@ -108,7 +103,7 @@ const PrivateLabelSection = () => {
                             className="bg-gradient-to-r from-primary to-secondary text-primary-foreground rounded-2xl p-6 md:p-8 shadow-lg"
                         >
                             <p className="text-lg md:text-xl font-medium leading-relaxed">
-                                Choose ALGHAITH as your trusted partner, and let us bring your private label vision to life on a global scale.
+                                {t('private_label_section.quote')}
                             </p>
                         </motion.div>
                     </div>
@@ -123,7 +118,7 @@ const PrivateLabelSection = () => {
                             className="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-black/5 p-8 md:p-10"
                         >
                             <h3 className="font-display text-2xl font-bold text-foreground mb-6">
-                                Our Capabilities
+                                {t('private_label_section.capabilities_title')}
                             </h3>
                             <ul className="space-y-4">
                                 {capabilities.map((item, idx) => (
@@ -153,10 +148,10 @@ const PrivateLabelSection = () => {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                             <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                                 <h3 className="font-display text-2xl font-bold mb-2">
-                                    Private Label Manufacturing
+                                    {t('private_label_section.img_title')}
                                 </h3>
                                 <p className="text-white/80 text-sm font-medium">
-                                    Customized solutions for your brand
+                                    {t('private_label_section.img_subtitle')}
                                 </p>
                             </div>
                         </motion.div>

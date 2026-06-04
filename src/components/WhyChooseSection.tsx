@@ -1,24 +1,27 @@
 import { motion } from "framer-motion";
 import { Factory, Sprout, Globe, Award, BarChart3, Users, ShieldCheck, CheckCircle2 } from "lucide-react";
-
-const reasons = [
-  { icon: Factory, title: "State-of-the-Art Facility", desc: "Modern manufacturing with latest canning technology ensuring top-tier quality and food safety." },
-  { icon: Sprout, title: "Farm to Can", desc: "Sourcing the finest raw materials directly from Egyptian farms for freshness and traceability." },
-  { icon: Globe, title: "Global Export Network", desc: "Exporting to markets across Europe, the Middle East, Africa, Asia, and the Americas." },
-  { icon: Award, title: "Internationally Certified", desc: "FDA · ISO 9001 · ISO 22000 · Kosher · HALAL certifications." },
-  { icon: BarChart3, title: "High Production Capacity", desc: "Significant annual production capacity for large-scale orders with consistency." },
-  { icon: Users, title: "Customer-Centric", desc: "Close collaboration for customized solutions that exceed expectations." },
-];
-
-const certifications = [
-  { name: "U.S. FDA", reg: "Reg: 19951687376", desc: "US Food & Drug Administration" },
-  { name: "ISO 9001:2015", reg: "EG02390246", desc: "Quality Management System" },
-  { name: "ISO 22000:2018", reg: "EG02390248", desc: "Food Safety Management" },
-  { name: "Kosher Parve", reg: "World of Kashrut", desc: "Certified WK Israel" },
-  { name: "HALAL", reg: "IFNAS-EG-HALAL-AF-907", desc: "Islamic Food & Nutrition" },
-];
+import { useTranslation } from "react-i18next";
 
 const WhyChooseSection = () => {
+  const { t } = useTranslation();
+
+  const reasons = [
+    { icon: Factory, title: t('why_choose_section.reasons.r1_title'), desc: t('why_choose_section.reasons.r1_desc') },
+    { icon: Sprout, title: t('why_choose_section.reasons.r2_title'), desc: t('why_choose_section.reasons.r2_desc') },
+    { icon: Globe, title: t('why_choose_section.reasons.r3_title'), desc: t('why_choose_section.reasons.r3_desc') },
+    { icon: Award, title: t('why_choose_section.reasons.r4_title'), desc: t('why_choose_section.reasons.r4_desc') },
+    { icon: BarChart3, title: t('why_choose_section.reasons.r5_title'), desc: t('why_choose_section.reasons.r5_desc') },
+    { icon: Users, title: t('why_choose_section.reasons.r6_title'), desc: t('why_choose_section.reasons.r6_desc') },
+  ];
+
+  const certifications = [
+    { name: "U.S. FDA", reg: "Reg: 19951687376", desc: t('why_choose_section.certifications.c1_desc') },
+    { name: "ISO 9001:2015", reg: "EG02390246", desc: t('why_choose_section.certifications.c2_desc') },
+    { name: "ISO 22000:2018", reg: "EG02390248", desc: t('why_choose_section.certifications.c3_desc') },
+    { name: "Kosher Parve", reg: "World of Kashrut", desc: t('why_choose_section.certifications.c4_desc') },
+    { name: "HALAL", reg: "IFNAS-EG-HALAL-AF-907", desc: t('why_choose_section.certifications.c5_desc') },
+  ];
+
   return (
     <section className="py-24 bg-leaves-pattern">
       <div className="container mx-auto px-6">
@@ -28,9 +31,9 @@ const WhyChooseSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-[0.2em] text-primary mb-3">Why Choose Us</p>
+          <p className="text-sm uppercase tracking-[0.2em] text-primary mb-3">{t('why_choose_section.subtitle')}</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-            Why Choose ALGHAITH
+            {t('why_choose_section.title')}
           </h2>
         </motion.div>
 
@@ -60,10 +63,10 @@ const WhyChooseSection = () => {
           className="text-center mb-10"
         >
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Our Quality Is Verified
+            {t('why_choose_section.quality_title')}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Every product leaving ALGHAITH Factory carries the weight of trust — earned through rigorous third-party audits and internationally recognized certifications.
+            {t('why_choose_section.quality_desc')}
           </p>
         </motion.div>
 

@@ -2,45 +2,47 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import { motion } from "framer-motion";
-import { Settings, Handshake, Globe, ClipboardCheck } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const steps = [
-  { num: "01", title: "Tell Us Your Vision", desc: "Share your target market, product requirements, preferred packaging format, and label language. Our team reviews within 48 hours." },
-  { num: "02", title: "Product & Packaging Development", desc: "We develop your product specifications, propose packaging options, and prepare label design mockups for your approval." },
-  { num: "03", title: "Sample Production", desc: "We produce a sample batch for your quality review and taste approval before committing to full production." },
-  { num: "04", title: "Production & Export", desc: "Your order enters our production queue. We handle all export documentation, certifications, and logistics coordination." },
-];
-
-const offerings = [
-  "Full product range available — all 8 categories",
-  "Cans: 400g retail · A9 catering · A10 bulk industrial",
-  "Glass jars: 180ml · 370ml · 720ml · 1L · 2L",
-  "Frozen: 400g · 800g · 1kg retail · 5kg · 10kg bulk",
-  "Label in any language — Arabic, English, French, German, Spanish, Dutch",
-  "Compliant with EU, GCC, UK, and US labeling regulations",
-  "Nutritional analysis and allergen declarations included",
-  "Recipe and flavor customization available",
-  "Halal, Kosher, and other certification documentation",
-];
+import { useTranslation } from "react-i18next";
 
 const PrivateLabel = () => {
+  const { t } = useTranslation();
+
+  const steps = [
+    { num: "01", title: t('private_label_page.steps.0.title'), desc: t('private_label_page.steps.0.desc') },
+    { num: "02", title: t('private_label_page.steps.1.title'), desc: t('private_label_page.steps.1.desc') },
+    { num: "03", title: t('private_label_page.steps.2.title'), desc: t('private_label_page.steps.2.desc') },
+    { num: "04", title: t('private_label_page.steps.3.title'), desc: t('private_label_page.steps.3.desc') },
+  ];
+
+  const offerings = [
+    t('private_label_page.offerings.0'),
+    t('private_label_page.offerings.1'),
+    t('private_label_page.offerings.2'),
+    t('private_label_page.offerings.3'),
+    t('private_label_page.offerings.4'),
+    t('private_label_page.offerings.5'),
+    t('private_label_page.offerings.6'),
+    t('private_label_page.offerings.7'),
+    t('private_label_page.offerings.8'),
+  ];
+
   return (
     <div className="min-h-screen">
       <Navbar />
       <div>
         <PageHero
-          title="Private Label"
-          subtitle="Your Brand — Our Expertise — Our Quality"
+          title={t('private_label_page.hero_title')}
+          subtitle={t('private_label_page.hero_subtitle')}
         />
 
         <section className="py-20 bg-background">
           <div className="container mx-auto px-6 max-w-4xl">
             <p className="text-muted-foreground text-center mb-16">
-              Build your brand on Egypt's finest produce. ALGHAITH manufactures and packages the full range of our eight product categories under your own brand name — with everything handled in-house, from product development to export documentation.
+              {t('private_label_page.description')}
             </p>
 
-            <h2 className="font-display text-2xl font-bold text-foreground text-center mb-10">How It Works</h2>
+            <h2 className="font-display text-2xl font-bold text-foreground text-center mb-10">{t('private_label_page.how_it_works_title')}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
               {steps.map((s, i) => (
                 <motion.div
@@ -60,10 +62,10 @@ const PrivateLabel = () => {
               ))}
             </div>
 
-            <h2 className="font-display text-2xl font-bold text-foreground mb-6">What We Offer</h2>
+            <h2 className="font-display text-2xl font-bold text-foreground mb-6">{t('private_label_page.offerings_title')}</h2>
             <div className="grid sm:grid-cols-2 gap-3 mb-12">
-              {offerings.map((o) => (
-                <div key={o} className="flex items-start gap-3 text-sm text-muted-foreground">
+              {offerings.map((o, i) => (
+                <div key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
                   <div className="w-2 h-2 rounded-full bg-primary shrink-0 mt-1.5" />
                   {o}
                 </div>
@@ -72,13 +74,13 @@ const PrivateLabel = () => {
 
             <div className="bg-primary rounded-2xl p-8 text-center">
               <h3 className="font-display text-xl font-bold text-primary-foreground mb-3">
-                Unlike brokers, ALGHAITH is the manufacturer
+                {t('private_label_page.unlike_brokers_title')}
               </h3>
               <p className="text-primary-foreground/80 text-sm mb-6">
-                No middleman, no quality uncertainty, no communication gap between what you specify and what we produce.
+                {t('private_label_page.unlike_brokers_desc')}
               </p>
               <Link to="/contact" className="bg-primary-foreground text-primary px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity inline-block">
-                Request a Private Label Consultation
+                {t('private_label_page.request_consultation')}
               </Link>
             </div>
           </div>

@@ -2,15 +2,18 @@ import { motion } from "framer-motion";
 import { ArrowDown, Calendar, Award, Package, Globe } from "lucide-react";
 import heroBg from "@/assets/egyptian-farm.jpg";
 import { Link } from "react-router-dom";
-
-const stats = [
-  { value: "Est. 2014", label: "A decade of food processing excellence", icon: Calendar },
-  { value: "5+", label: "International Certifications", icon: Award },
-  { value: "8", label: "Product Categories", icon: Package },
-  { value: "Global", label: "Gulf · Europe · North America", icon: Globe },
-];
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
+  const stats = [
+    { value: t('hero.stats.est'), label: t('hero.stats.est_label'), icon: Calendar },
+    { value: t('hero.stats.certs'), label: t('hero.stats.certs_label'), icon: Award },
+    { value: t('hero.stats.categories'), label: t('hero.stats.categories_label'), icon: Package },
+    { value: t('hero.stats.global'), label: t('hero.stats.global_label'), icon: Globe },
+  ];
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-36">
       <div className="absolute inset-0 z-0">
@@ -34,9 +37,9 @@ const HeroSection = () => {
           transition={{ delay: 0.4 }}
           className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-4xl mx-auto"
         >
-          Quality You Can Trust
+          {t('hero.title1')}
           <br />
-          <span className="text-gold">Freshness You Can Taste</span>
+          <span className="text-gold">{t('hero.title2')}</span>
         </motion.h1>
 
         <motion.p
@@ -45,7 +48,7 @@ const HeroSection = () => {
           transition={{ delay: 0.6 }}
           className="max-w-4xl mx-auto text-lg text-primary-foreground/80 mb-10"
         >
-          From the fertile heart of Egypt's Nile Delta to tables across the globe — ALGHAITH Factory delivers premium processed, frozen, and canned fruits and vegetables, crafted with precision and preserved with purpose.
+          {t('hero.description')}
         </motion.p>
 
         <motion.div
@@ -59,13 +62,13 @@ const HeroSection = () => {
             className="bg-gradient-to-r from-primary to-secondary text-primary-foreground px-10 py-4 rounded-full font-bold text-lg hover:from-secondary hover:to-primary transition-all duration-300 shadow-xl hover:shadow-2xl relative overflow-hidden group"
           >
             <div className="absolute inset-0 bg-white/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
-            <span className="relative z-10">Explore Our Products</span>
+            <span className="relative z-10">{t('hero.explore_btn')}</span>
           </Link>
           <Link
             to="/contact"
             className="bg-white/10 backdrop-blur-md border border-white/30 text-primary-foreground px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300 shadow-lg"
           >
-            Request a Quote
+            {t('hero.quote_btn')}
           </Link>
         </motion.div>
 

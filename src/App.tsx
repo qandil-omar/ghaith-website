@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Products from "./pages/Products";
@@ -24,6 +25,19 @@ const ScrollToTop = () => {
   return null;
 };
 
+const LanguageDirectionManager = () => {
+  const { i18n } = useTranslation();
+  
+  useEffect(() => {
+    document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
+
+  return null;
+};
+
+import WhatsAppButton from "@/components/WhatsAppButton";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -31,6 +45,8 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <LanguageDirectionManager />
+        <WhatsAppButton />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
